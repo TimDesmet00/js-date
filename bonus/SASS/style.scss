@@ -1,0 +1,17 @@
+@import './vendor/normalize';
+
+body{
+    height: 100vh;
+    width: 100%;
+    .agenda{
+        .days{
+            background-color: darkred;
+        }
+        .dates{
+            background-color: grey;
+        }
+        .years{
+            background-color: darkred;
+        }
+    }
+}
