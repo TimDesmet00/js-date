@@ -7,10 +7,10 @@ let anchorageDate = new Date().toLocaleString('fr-BE', { timeZone: 'America/Anch
 let reykjavikDate = new Date().toLocaleString('fr-BE', { timeZone: 'Atlantic/Reykjavik' });
 let saintPetersburgDate = new Date().toLocaleString('fr-BE', { timeZone: 'Europe/Kiev' });
 
-console.log(bruxelleDate);
-console.log(anchorageDate);
-console.log(reykjavikDate);
-console.log(saintPetersburgDate);
+// console.log(bruxelleDate);
+// console.log(anchorageDate);
+// console.log(reykjavikDate);
+// console.log(saintPetersburgDate);
 
 importEX1.textContent = `Bruxelles: ${bruxelleDate}. Anchorage: ${anchorageDate}. Reykjavik: ${reykjavikDate}. Saint-Petersbourg: ${saintPetersburgDate}`;
 
@@ -31,12 +31,18 @@ console.log(ageInDays);
 importEX2.textContent = `My age in days = ${ageInDays}`;
 
 // exercice 3
-
+const inputex3 = document.getElementById("hours");
 const importEX3 = document.querySelector(".ex3");
 
-const today8miles = today.getTime() + 80000 * 60 * 60 * 1000;
-const date8miles = new Date(today8miles);
+const addhours = inputex3.addEventListener("keyup", (e) =>{
+    const input = e.target.value;
+    const today8miles = today.getTime() + input * 60 * 60 * 1000;
+    const date8miles = new Date(today8miles);
+    importEX3.textContent = `Date in 80000 hour: ${date8miles}`;
+})
 
-console.log(today8miles);
 
-importEX3.textContent = `Date in 80000 hour: ${date8miles}`;
+
+// console.log(today8miles);
+
+// importEX3.textContent = `Date in 80000 hour: ${date8miles}`;
