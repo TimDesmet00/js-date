@@ -49,13 +49,44 @@ input {
 body {
   height: 100vh;
   width: 100%;
+  background-color: lightgray;
+}
+body .agenda {
+  width: 15%;
+  text-align: center;
+  font-size: 3em;
+  margin-left: 30%;
+  margin-top: 10%;
+  overflow: hidden;
 }
 body .agenda .days {
-  background-color: darkred;
+  background-color: rgb(192, 12, 12);
+  color: antiquewhite;
+  border: 3px solid darkred;
+  padding: 0.25em;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom: none;
 }
 body .agenda .dates {
-  background-color: grey;
+  background-color: antiquewhite;
+  padding: 0.5em;
+  border: 3px solid grey;
+  border-bottom: none;
+  border-top: none;
 }
 body .agenda .years {
-  background-color: darkred;
+  background-color: rgb(192, 12, 12);
+  color: antiquewhite;
+  border: 3px solid darkred;
+  padding: 0.25em;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top: none;
+}
+body .hours {
+  font-size: 7em;
+  position: absolute;
+  left: 50%;
+  top: 39%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,17 +1,48 @@
-@import './vendor/normalize';
+@import './vendor/normalize.scss';
+@import './variable.scss';
 
 body{
     height: 100vh;
     width: 100%;
+   background-color: lightgray;
     .agenda{
+        width: 15%;
+        text-align: center;
+        font-size: 3em;
+        margin-left: 30%;
+        margin-top: 10%;
+        overflow: hidden;
         .days{
-            background-color: darkred;
+            background-color: $div-color;
+            color: $text-div-color;
+            border: 3px solid darkred;
+            padding: 0.25em;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom: none;
         }
         .dates{
-            background-color: grey;
+            background-color: $text-div-color;
+            padding: 0.5em;
+            border: 3px solid grey;
+            border-bottom: none;
+            border-top: none;
+            
         }
         .years{
-            background-color: darkred;
+            background-color: $div-color;
+            color: $text-div-color;
+            border: 3px solid darkred;
+            padding: 0.25em;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-top: none;
         }
+    }
+    .hours{
+        font-size: 7em;
+        position: absolute;
+        left: 50%;
+        top : 39%;
     }
 }
